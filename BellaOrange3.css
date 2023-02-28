@@ -1,0 +1,685 @@
+:root
+{
+    --Orange:orangered;
+    --Blanc:white;
+    --PoliceEcriture: Arial;
+}
+
+
+*
+{
+    margin: 0;
+    padding:0;
+}
+
+
+
+.container
+{
+    display: grid;
+    grid-template-rows: 12em 180em 20em;
+    grid-gap:0.1em;
+}
+
+
+
+.header
+{
+    
+    display: flex;
+    grid-gap:1em;
+    justify-content: space-between;
+}
+
+.header >div:nth-child(1)
+{
+
+    width: 12em;
+    background-image: url('image/Logo.png');
+    background-repeat: no-repeat;
+    background-position:-0.5em 1em ;
+
+}
+.header> div:nth-child(2)
+{
+    width: 29em;
+    display: grid;
+    grid-template-columns: 20em 9em;
+
+
+}
+.header> div:nth-child(2)>div
+{
+    
+    justify-content: space-evenly;
+    
+}
+
+.header> div:nth-child(2)>div:nth-child(1)
+{
+    display:grid;
+    grid-template-columns: repeat(4,5em);
+    align-items: end;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.header> div:nth-child(2)>div:nth-child(1)>div:nth-child(1)
+{
+   
+    color:var(--Orange);
+    
+}
+
+.header> div:nth-child(2)>div:nth-child(1)> div
+{
+    
+    block-size: 5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--PoliceEcriture);
+
+}
+.header> div:nth-child(2)>div:nth-child(2)
+{
+    
+    display: grid;
+    grid-template-rows: repeat(3, 0.1em);
+    align-items: end;
+    grid-gap: 5em;
+    
+    
+}
+
+.header> div:nth-child(2)>div:nth-child(2)>div
+{
+    border: 0.5em solid grey;
+    width: 3em;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.184);
+    position: relative;
+    top:6em;
+    left:15em;
+    cursor: pointer;
+   
+
+
+   
+
+}
+.header> div:nth-child(2)>div:nth-child(2)
+{
+        display: none;
+}  
+
+.Body
+{
+    display: grid;
+    grid-template-rows:repeat(4, 40em);
+    
+
+
+}
+.Body>div:nth-child(1)
+{
+    
+    background-image: url('image/ndékii.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:;
+}
+.Body>div:nth-child(1)>:nth-child(1)
+{
+    width: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.Body>div:nth-child(1)>:nth-child(1)>div
+{
+    block-size: 2em;
+    font-family: var(--PoliceEcriture);
+    text-align: center;
+    color:var(--Blanc)
+   
+}
+
+.Body>div:nth-child(1)>:nth-child(1)>div:nth-child(1)
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.Body>div:nth-child(1)>:nth-child(1)>div:nth-child(2), .Body>div:nth-child(1)>:nth-child(1)>div:nth-child(3)
+{
+    font-size: 3.1em;
+    font-weight: bold; 
+    width: 22em;  
+}
+
+.Body>div:nth-child(2)
+
+{
+    display: grid;
+    grid-template-rows: 3em 35em ;
+    justify-content: center;
+    position: relative;
+    bottom:15em;
+    
+}
+
+.Body>div:nth-child(2)>div:nth-child(1)
+{
+   
+   
+    width: 30em;
+    block-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+    
+}
+.Body>div:nth-child(2)>div:nth-child(1)>div
+{
+    width: 7em;
+    background-color: var(--Orange);
+    border:0.1em solid transparent;
+    border-radius: 2em;
+    text-align: center;
+    align-items: center;
+    font-size:1em;
+    font-weight: bold;
+    font-family: var(--PoliceEcriture);
+    color: var(--Blanc);
+    padding:1em;
+}
+
+.Body>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)
+{
+    background-color: transparent;
+    border:0.1em solid var(--Blanc);
+}
+
+
+.Body>div:nth-child(2)>div:nth-child(2)
+{
+   
+    
+    background-image: url('image/2telephones.png');
+    background-repeat: no-repeat;
+    background-position:-1em -4em ;
+    background-size: cover;
+    border-bottom: 0.2em solid grey;
+    
+}
+
+.Body>div:nth-child(3)
+{
+   
+    block-size: 4em;
+    position: relative;
+    bottom:5em;
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--PoliceEcriture);
+
+}
+
+.Body>div:nth-child(4)
+{
+    background-color: ;
+    position: relative;
+    bottom:40em;
+    block-size: 90em;
+    display: grid;
+    grid-template-rows: 35em 50em;
+
+}
+
+.Body>div:nth-child(4)>div:nth-child(1)
+{
+    
+    display:flex;
+    justify-content: space-around;
+    gap:0.4em;
+
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)
+{
+    width: 42em ;
+    
+    background-image: url('image/RectangleImg2.png');
+    background-repeat: no-repeat;
+    background-position:10em -8em ;
+    background-size: ;
+    background-color:;
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)
+{
+    width: 42em ;
+    background-color: ;
+    
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    gap:1em;
+   
+    
+    
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div, .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div
+{
+    block-size: 1em;
+    font-family: var(--PoliceEcriture);
+    font-weight: bold;
+    
+   
+   
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1), .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div:nth-child(1)
+{
+    color: var(--Orange);
+
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2), .Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div:nth-child(3), .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div:nth-child(2), .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div:nth-child(3)
+{
+    font-size: 2em;
+}
+.Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div:nth-child(4), .Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div:nth-child(5) , .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div:nth-child(4), .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div:nth-child(5)
+{
+    font-weight: normal ;
+    color:rgba(0, 0, 0, 0.63)
+}
+.Body>div:nth-child(4)>div:nth-child(2)
+{
+    block-size: 90em;
+    
+}
+
+
+.Body>div:nth-child(4)>div:nth-child(2)
+{
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Body>div:nth-child(4)>div:nth-child(2)>div
+{
+    width: 45%;
+    block-size: 50em;
+    
+}
+
+.Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(2)
+{
+    background-image: url('image/RectangleImg3.png');
+    background-repeat: no-repeat;
+    background-position: 
+}
+.Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1)
+{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20em;
+   
+}
+.Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(1) >div
+{
+    
+}
+/*----------------------------------la partie du footer*/
+
+.footer
+{
+  
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer > div:nth-child(1)
+{
+    block-size: 12em;
+   
+    display:flex;
+    justify-content: space-around;
+
+
+}
+.footer > div:nth-child(1) >div
+{
+        width: 25em;
+        
+
+}
+
+.footer > div:nth-child(1) >div:nth-child(1)
+{
+    background-image: url('image/Logo.png');
+    background-repeat: no-repeat;
+    background-size: ;
+    background-position: 1em 2em ;
+
+}
+
+.footer > div:nth-child(1) >div:nth-child(2)
+{
+    display:flex;
+    justify-content: space-around;
+
+}
+.footer > div:nth-child(1) >div:nth-child(2)>div{
+    width: 5em;
+    
+    block-size: 7em;
+    
+}
+.footer > div:nth-child(1) >div:nth-child(2)>div:nth-child(1)
+{
+    background-image: url('image/iconetweeterOrange.png');
+    background-repeat: no-repeat;
+    background-size: ;
+    background-position:2em 4em  ;
+    cursor: pointer;
+}
+
+.footer > div:nth-child(1) >div:nth-child(2)>div:nth-child(2)
+{
+    background-image: url('image/iconeFacebookOrange.png');
+    background-repeat: no-repeat;
+    background-size: ;
+    background-position:2em 4em  ;
+    cursor: pointer;
+}
+
+.footer > div:nth-child(1) >div:nth-child(2)>div:nth-child(3)
+{
+    background-image: url('image/instagramicone.png');
+    background-repeat: no-repeat;
+    background-size: ;
+    background-position:2em 4em ;
+    cursor: pointer;
+}
+
+
+.footer > div:nth-child(1) >div:nth-child(3)
+{
+    text-align: center;
+    padding:4em;
+}
+
+.footer > div:nth-child(2)
+{
+   
+    display: none;
+}
+/*-------------------------------------------------------------------*/
+.dessinTelephone
+{
+    
+    block-size: 34em;
+   
+    display:grid;
+    grid-template-rows: 8em 20em 2em;
+    
+    
+}
+.dessinTelephone>div:nth-child(1)
+{
+    position:relative;
+    top:1em;
+    block-size: 10em;
+    background-color: ;
+    background-image: url('image/casquette-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position:5em 2em ;
+    
+}
+.dessinTelephone>div:nth-child(2)
+{
+    background-color: rgba(128, 128, 128, 0.246);
+    position: relative;
+    top:2em;
+}
+
+
+.dessinTelephone>div:nth-child(2)>div:nth-child(1)
+{
+    block-size: 2em;
+    border-bottom: 0.1em solid var(--Blanc);
+    border-radius: 2em;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    
+}
+.dessinTelephone>div:nth-child(2)>div:nth-child(1)>div{
+    width:4em;
+    font-weight: bold;
+    font-family: var(--PoliceEcriture);
+    
+
+}
+
+.dessinTelephone>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)
+{
+    border-bottom: 0.2em solid var(--Orange);
+}
+
+
+.dessinTelephone>div:nth-child(2)>div:nth-child(2), .dessinTelephone>div:nth-child(2)>div:nth-child(4), .dessinTelephone>div:nth-child(2)>div:nth-child(3), .dessinTelephone>div:nth-child(2)>div:nth-child(5), .dessinTelephone>div:nth-child(2)>div:nth-child(6)
+{
+    color:black;
+    block-size:2em;
+    
+}
+
+.dessinTelephone>div:nth-child(2)>div:nth-child(3), .dessinTelephone>div:nth-child(2)>div:nth-child(5)
+{
+    border-bottom: 0.1em solid;
+}
+.dessinTelephone>div:nth-child(2)>div:nth-child(2), .dessinTelephone>div:nth-child(2)>div:nth-child(4)
+{
+    color:rgba(0, 0, 0, 0.507);
+}
+.dessinTelephone>div:nth-child(2)>div:nth-child(6)
+{
+    position: relative;
+    top:2em;
+    color: var(--Orange);
+}
+
+.dessinTelephone>div:nth-child(3)
+{
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+    top:5em;
+  
+}
+.dessinTelephone>div:nth-child(3)>div
+{
+    width: 10em;
+    block-size: ;
+    background-color: var(--Orange);
+    text-align: center;
+    align-items: center;
+    border: O.2em solid var(--Orange);
+    border-radius: 2em;
+    padding: 1.4em;
+    font-weight: bold;
+    color: var(--Blanc);
+
+}
+.dessinTelephone
+{
+    display:none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:48.92em) 
+{
+    .container> div:nth-child(1)> div:nth-child(2)>div:nth-child(2)
+    {
+        display: block;
+        justify-content: end;
+        
+    }
+    .container> div:nth-child(1)> div:nth-child(2)>div:nth-child(1)
+    {
+        display: none;
+    }
+    .Body>div:nth-child(1)
+    {
+        background-image: none;
+    }
+    .Body>div:nth-child(1) > div:nth-child(1)
+    {
+        background-color: white;
+        color:black;
+    }
+    .Body>div:nth-child(1)>:nth-child(1)>div
+    {
+        color:black;
+    }
+    .Body>div:nth-child(2)>div:nth-child(1)
+    {
+        flex-direction: column;
+        background-color:;
+        block-size: 8em;
+        align-items: center;
+        
+    }
+
+    
+    .Body>div:nth-child(2)>div:nth-child(1) >div:nth-child(2)
+    {
+        color: var(--Orange);
+        border:0.1em solid var(--Orange);
+        background-color: transparent;
+        
+    }
+    .Body>div:nth-child(2)>div:nth-child(1) >div
+    {
+        width: auto;
+        justify-content: center;
+
+        gap: 0.4em;
+    }
+    .Body>div:nth-child(2)>div:nth-child(2)
+    {
+   
+    
+        background-position:-1em -2em ;
+        block-size: 35em;
+        border-bottom:none;
+        
+    
+    }
+    .Body>div:nth-child(3)
+    {
+        border-bottom: 0.1em solid rgba(128, 128, 128, 0.788); 
+    }
+
+    .dessinTelephone
+    {
+         display:block;
+
+    }
+
+    .Body>div:nth-child(4)>div:nth-child(1)
+    {
+        block-size: 90em;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)
+    {
+       
+        position: relative;
+        bottom:8em;
+        align-items: center;
+
+    }
+    .Body>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)
+    {
+
+        
+        block-size: 34em;
+        gap:1em;
+        position: relative;
+        bottom:28em;
+        background-image:none ;
+        width: 17em;
+        border: 0.1em solid ;
+        border-radius:2em ;
+    }
+    .Body>div:nth-child(4)>div:nth-child(2)
+    {
+        flex-direction: column;
+        position: relative;
+        left:12em;
+        width: 40em;
+    
+    }
+    .Body>div:nth-child(4)>div:nth-child(2)>div
+    {
+        justify-content: center;
+        background-color:;
+        width: 30em;
+        position: relative;
+        left: 8em;
+        bottom:2em;
+    }
+    .Body>div:nth-child(4)>div:nth-child(2)>div:nth-child(2)
+    {
+        position: relative;
+        bottom:30em;
+        block-size: 70em;
+    }
+    .footer > div:nth-child(2)
+    {
+        display: block;
+        block-size: 5em;
+        text-align: center;
+        font-family: var(--PoliceEcriture);
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .footer > div:nth-child(1) >div:nth-child(1), .footer > div:nth-child(1) >div:nth-child(3)
+    {
+        display: none;
+    }
+}
+    
